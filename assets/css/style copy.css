@@ -1,0 +1,347 @@
+html { background-color: #000; } 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 120px auto 40px;
+    grid-template-areas: "encabezado  navegador  navegador  navegador navegador  navegador"
+                         "cuerpo      cuerpo     cuerpo     cuerpo    cuerpo     cuerpo"
+                         "pie         pie        pie        pie       pie        pie";
+}
+
+.encabezado{
+    grid-area: encabezado;
+    background-image: linear-gradient(to left, rgb(0, 0, 0),  darkslateblue);
+    padding-right: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+}
+
+.redesSociales img{
+    width: 24px;
+}
+
+.navegador{
+    grid-area: navegador;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.navbar li:hover{
+    background-color: darkslateblue;
+    color:white;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .seleccionado{
+    background-color: rgb(53, 45, 102);
+    color:white;
+}
+
+.imagenFondoInicio{
+    background-image: url(../img/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+.imagenFondoNosotros{
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenFondoEntrenamientos{
+    background-image: url(../img/entrenamientos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenFondoTienda{
+    background-image: url(../img/tienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.imagenFondoContacto{
+    background-image: url(../img/contacto.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+.cuerpo{
+    grid-area: cuerpo;
+}
+
+.informacionCuerpo{
+    color: white;
+    text-align: center;
+}
+
+.informacionCuerpo .titulo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.informacionCuerpo .subtitulo{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.informacionCuerpo .descripcion{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: rgba(72, 61, 139);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_lg{
+    width: 200px;
+    height: 50px;
+}
+
+.btn_sm{
+    width: 100px;
+    height: 40px;
+}
+
+.btn_wa{
+    background-image: url(../img/wa.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.herramientasTienda{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.herramientasTienda img{
+    width: 30px;
+}
+
+.inputTexto{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: 1.2rem;
+    border-color: grey;
+    border-radius: 10px;
+    border-style: solid;
+    background-image: url(../img/search.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: right;    
+}
+
+.relleno{
+    height: 75px;
+}
+.cajas{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(39, 38, 38);
+}
+
+.caja{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(141, 136, 177); */
+    border-color: darkslateblue;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+.cajaTexto{
+    width: 300px;
+    padding: 10px;
+    background-color: darkolivegreen;
+    border-color:forestgreen;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.cajaTexto a{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.grillaCuerpo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cajaContacto{
+    color: lightgray;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(39, 38, 38);
+}
+
+.infoContacto{
+    width: 40%;
+}
+
+.infoContacto img{
+    margin-top: 10px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+.formularioContacto{
+    margin-top: 10px;
+    width: 40%;
+}
+
+.formularioContacto input{
+    height: 40px;
+    width: 50%;
+}
+
+.formularioContacto textarea{
+    width: 100%;
+}
+
+.fontContacto{
+    font-size: 1.2rem;
+    color: grey;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgb(39, 38, 38);
+}
+
+.botonesContacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonesContacto input{
+    width: 30%;
+}
+.mapaContactoMedio{
+    text-align: center;
+}
+
+.mapaContactoChico{
+    display: none;
+    text-align: center;
+}
+
+.pie{
+    grid-area: pie;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacionPie{
+    color:white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    .navbar ul li{
+        font-size: 0.8rem;
+        padding: 5px;
+    }    
+    .mapaContactoMedio{
+        display: none;
+    }
+    .mapaContactoChico{
+        display: block;
+    }
+
+}
+
+@media (max-width: 512px){
+    .navbar ul{
+        display: block;
+    }
+    .cajaContacto{
+        display: block;
+    }
+    .infoContacto{
+        width: 100%;
+    }
+    
+    .formularioContacto{
+        width: 100%;
+    }
+    
+    .formularioContacto input{
+        height: 40px;
+        width: 100%;
+    }
+    
+    .formularioContacto textarea{
+        width: 100%;
+    }    
+}
