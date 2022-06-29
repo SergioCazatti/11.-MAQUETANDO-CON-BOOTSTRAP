@@ -5,103 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>BEAR GYM</title>
 </head>
-<body>
-    <div class="contenedor">
-        <header class="encabezado">
-            <div class="logo">
-                <a href="../index.html"><img src="../assets/img/logo-small_blanco.png" alt="BearGym"></a>
-                
-                <div class="redesSociales">
-                    <a href="https://www.facebook.com"><img src="../assets/img/facebook.PNG" alt="Facebook"></a>
-                    <a href="https://www.instagram.com"><img src="../assets/img/instagram.PNG" alt="Instagram"></a>
-                    <a href="https://www.twitter.com"><img src="../assets/img/twitter.PNG" alt="twitter"></a>
+<body class="container-fluid  m-0 p-0">
+    
+    <div class="row">
+      
+        <div class="col-9 col-md-6">
+            <div class="d-flex ps-4 encabezado" data-aos="fade-right" data-aos-duration="2500">
+                <div class="img-fluid">
+                    <a href="../index.html"><img src="../assets/img/logo-small_blanco.png" alt="BearGym" /></a>
+                </div>
+                <div class="d-flex flex-column justify-content-center redesSociales" >
+                    <img src="../assets/img/facebook.PNG" alt="Facebook">
+                    <img src="../assets/img/instagram.PNG" alt="Instagram">
+                    <img src="../assets/img/twitter.PNG" alt="Twitter">
                 </div>
             </div>
-        </header>
-        <nav class="navegador">
-            <div class="navbar">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li class="seleccionado"><a href="#">Nosotros</a></li>
-                    <li><a href="./entrenamientos.html">Entrenamientos</a></li>
-                    <li><a href="./tienda.html">Tienda</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+        </div>
+
+        <div class="col-3 col-md-6 d-flex align-items-center justify-content-end" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="800">
+            <nav class="navbar navbar-expand-md bg-black navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item seleccionado">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/entrenamientos.html">Entrenamientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
-        <main class="cuerpo">
-            <div class="informacionCuerpo imagenFondoNosotros">
-                <p class="titulo" data-aos="zoom-in" data-aos-duration="1000">NOSOTROS</p>
-                <p class="subtitulo">¿Quieres estar saludable y tener un cuerpo perfecto? ¡BEAR GYM es la decisión correcta para ti! ¡Crearemos un programa de entrenamiento personal y equilibrará tu dieta para que puedas obtener la forma de tus sueños!</p>
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ullam eligendi quidem totam consectetur, modi eveniet corrupti at, iure tempore accusamus ducimus dolorem temporibus officia. Nemo placeat quae vel perspiciatis ab maiores? Nihil aliquam delectus explicabo facere non. Enim et quas consequatur facilis aliquid debitis repudiandae laudantium, tenetur deserunt nulla sunt nihil praesentium! Labore, culpa accusantium perferendis, doloremque possimus perspiciatis tempora minima, quos rerum vel placeat est consequatur autem? Distinctio ad accusamus, ipsa ipsum in voluptatem non itaque eos delectus officiis voluptates expedita vel dolorum. Eum expedita tempore mollitia possimus aperiam praesentium magnam, consequuntur dolorem optio reprehenderit in facere fugit!</h3></p>
-                <button class="btn btn_lg">Consulta gratuitamente aquí !</button>
-                <p class="subtitulo" ><h2>Salas y Actividades</h2></p>                
-            </div>
-
-            <div class="cajas">
-                <div class="caja">
-                    <img src="../assets/img/sala1.jpg" alt="">
-                    <p>Sala 1 musculación</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/sala2.jpg" alt="">
-                    <p>Sala 2 musculación</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/sala3.jpg" alt="">
-                    <p>Sala 3 Cross Fit</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/sala4.jpg" alt="">
-                    <p>Sala 4 blanda</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/sala5.jpg" alt="">
-                    <p>Sala 5 spinning</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/actividad1.jpg" alt="">
-                    <p>Funcional</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/actividad2.jpg" alt="">
-                    <p>Cross Fit</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/actividad3.jpg" alt="">
-                    <p>Spinning</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/actividad4.jpg" alt="">
-                    <p>Ciclo indoor</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/actividad5.jpg" alt="">
-                    <p>Hiit</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/actividad6.jpg" alt="">
-                    <p>Full Body</p>
-                </div>
-                <div class="caja">
-                    <img src="../assets/img/actividad7.jpg" alt="">
-                    <p>Natación</p>
-                </div>
-            </div>
-        </main>            
-        <footer class="pie">
-            <div class="informacionPie">
-                Copyright © 2022 - BEAR GYM - Todos los derechos reservados.
-            </div>
-        </footer>
     </div>
+    <header class="imagenFondoNosotros d-flex justify-content-center">
+        <div class="row d-flex justify-content-around">
+            <div class="col-9 text-center cajaOpaca">
+                <p class="fs-1 fw-bold p-3 text-light" data-aos="zoom-in">NOSOTROS</p>
+                <p class="fs-5 fw-bold p-3 text-light" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">¿Quieres estar saludable y tener un cuerpo perfecto? ¡BEAR GYM es la decisión correcta para ti! ¡Crearemos un programa de entrenamiento personal y equilibrará tu dieta para que puedas obtener la forma de tus sueños!</p>
+                <p class="fs-5 fw-bold p-3 text-light" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ullam eligendi quidem totam consectetur, modi eveniet corrupti at, iure tempore accusamus ducimus dolorem temporibus officia. Nemo placeat quae vel perspiciatis ab maiores? Nihil aliquam delectus explicabo facere non. Enim et quas consequatur facilis aliquid debitis repudiandae laudantium, tenetur deserunt nulla sunt nihil praesentium! Labore, culpa accusantium perferendis, doloremque possimus perspiciatis tempora minima, quos rerum vel placeat est consequatur autem? Distinctio ad accusamus, ipsa ipsum in voluptatem non itaque eos delectus officiis voluptates expedita vel dolorum. Eum expedita tempore mollitia possimus aperiam praesentium magnam, consequuntur dolorem optio reprehenderit in facere fugit!</h3></p>
+                <button class="btn btn_lg btn-primary" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1200">Consulta gratuitamente aquí !</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="row d-flex just">
+            <p class="clo-12 fs-3 text-light text-center" >Salas y Actividades</p>                
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 m-2 d-flex justify-content-around">
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/sala1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala 1 - Musculación</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/sala2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala 2 - Musculación</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/sala3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala 3 - Cross Fit</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/sala4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala 4 - Sala Blanda</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/sala5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala 5 - Spinning</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/actividad1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Funcional</h5>
+                    </div>
+                </div>
+            </div>                                        
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/actividad2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cross Fit</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/actividad3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spinning</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/actividad4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ciclo Indoor</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/actividad5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hiit</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/actividad6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Body</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <img src="../assets/img/actividad7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Natación</h5>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+    </main>            
+
+    <footer class="row pie">
+        <div class="col-12 text-light d-flex justify-content-around mt-2">
+            <p>Copyright © 2022 - BEAR GYM - Todos los derechos reservados.</p>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+    </script>    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>
 </html>

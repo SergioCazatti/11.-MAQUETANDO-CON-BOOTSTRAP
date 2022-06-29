@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>BEAR GYM</title>
 </head>
 <body class="container-fluid  m-0 p-0">
     <!-- Primer Fila: Esta fila contiene al head y al nav -->
@@ -15,7 +16,7 @@
       <div class="col-9 col-md-6">
 
         <!-- header -->
-        <div class="d-flex ps-4 encabezado">
+        <div class="d-flex ps-4 encabezado" data-aos="fade-right" data-aos-duration="2500">
             <div class="img-fluid">
                 <a href="./index.html"><img src="./assets/img/logo-small_blanco.png" alt="BearGym"></a>
             </div>
@@ -26,8 +27,8 @@
             </div>
         </div>
       </div>
-      <div class="col-3 col-md-6 d-flex align-items-center justify-content-end">
 
+      <div class="col-3 col-md-6 d-flex align-items-center justify-content-end" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="800">
         <nav class="navbar navbar-expand-md bg-black navbar-dark">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
-                <li class="nav-item">
+                <li class="nav-item seleccionado">
                   <a class="nav-link" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
@@ -66,7 +67,7 @@
                 <p class="fs-1 fw-bold p-3 text-light" data-aos="zoom-in">MANTENÉ TU CUERPO</p>
                 <p class="fs-2 fw-bold p-3 text-light" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Fuerte & En Forma</p>
                 <p class="fs-5 fw-bold p-3 text-light" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">Centro de salud fitness donde tu cuerpo toma forma. Empieza a entrenar ahora para mantenerte en forma y saludable todo el año.</h3></p>
-                <button class="btn btn_lg" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1200">Ingresar !</button>
+                <button class="btn btn-primary btn_lg " data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1200">Ingresar !</button>
                 <br><br><br><br><br>
             </div>
         </div>
@@ -77,7 +78,10 @@
             <p>Copyright © 2022 - BEAR GYM - Todos los derechos reservados.</p>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>    
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>
