@@ -81,6 +81,12 @@ body { background-color:black; }
     height: 50px;
 }
 
+.btn_md{
+    width: 200px;
+    height: 50px;
+}
+
+
 .navbar .seleccionado{
     background-color: rgb(53, 45, 102);
     color:white;
